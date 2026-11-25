@@ -5,11 +5,10 @@
 #include <string.h>
 
 /*
- * matrix.h — Simple dense matrix (flat 1D, row-major)
+ * matrix.h — Simple dense matrix (flat 1D)
  *
  * Storage:  A->data[i * A->cols + j]  =  element at row i, col j
  *
- * All functions are static inline so this remains a header-only utility.
  */
 
 /* ------------------------------------------------------------------ */
@@ -54,7 +53,7 @@ static inline void mat_free(Matrix *m)
 /*  Helpers                                                            */
 /* ------------------------------------------------------------------ */
 
-/* Fill every element with a random value in [0, 1). */
+/* Fill every element with a random value in [0, 1]. */
 static inline void mat_randomize(Matrix *m)
 {
     int n = m->rows * m->cols;
@@ -79,7 +78,7 @@ static inline Matrix *mat_copy(const Matrix *src)
     return dst;
 }
 
-/* Print (small matrices only — for debugging). */
+/* Print */
 static inline void mat_print(const Matrix *m)
 {
     for (int i = 0; i < m->rows; i++) {
@@ -91,7 +90,7 @@ static inline void mat_print(const Matrix *m)
 
 /* ------------------------------------------------------------------ */
 /*  Matrix Addition:  C = A + B                                        */
-/*  A and B must have the same dimensions. Returns NULL on mismatch.   */
+/*  Need same dimensions. Returns NULL on mismatch.   */
 /* ------------------------------------------------------------------ */
 
 static inline Matrix *mat_add(const Matrix *A, const Matrix *B)
@@ -150,11 +149,6 @@ static inline int mat_sub_inplace(Matrix *A, const Matrix *B)
     return 0;
 }
 
-/* ------------------------------------------------------------------ */
-/*  Naive Matrix Multiply:  C = A × B   (triple loop, O(n³))          */
-/*  A is (m×k), B is (k×n)  →  C is (m×n)                             */
-/* ------------------------------------------------------------------ */
-
 static inline Matrix *mat_mul_naive(const Matrix *A, const Matrix *B)
 {
     if (A->cols != B->rows) return NULL;
@@ -178,6 +172,19 @@ static inline Matrix *mat_mul_naive(const Matrix *A, const Matrix *B)
 
     return C;
 }
+
+#ifdef __cplusplus
+/* The caller frees the result with mat_free. Multiplication uses the naive kernel. */
+static inline Matrix *operator+(const Matrix &A, const Matrix &B)
+{
+    return mat_add(&A, &B);
+}
+
+static inline Matrix *operator*(const Matrix &A, const Matrix &B)
+{
+    return mat_mul_naive(&A, &B);
+}
+#endif
 
 /* ------------------------------------------------------------------ */
 /*  Equality check (with tolerance, for correctness testing)           */
