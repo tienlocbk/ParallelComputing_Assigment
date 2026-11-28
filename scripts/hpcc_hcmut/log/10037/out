@@ -1,0 +1,19 @@
+Results directory: /home/s2452704/ondemand/data/sys/myjobs/projects/default/1/ParallelComputing_Assigment/output-job-10037-qDwfu0
+node1
+node7
+[node1.supernodexp.hpc:3254563] Rank 0 bound to package[0][core:L2-5]
+[node1.supernodexp.hpc:3254563] Rank 1 bound to package[0][core:L6-9]
+[node7.supernodexp.hpc:1144909] Rank 2 bound to package[0][core:L0-3]
+[node7.supernodexp.hpc:1144909] Rank 3 bound to package[0][core:L4-7]
+threads_per_rank=4
+N=256 ranks=4 cutoff=32 multiplication_seconds=0.011510
+Correctness check: PASS
+N=10000 ranks=4 threads=4 trial=1
+threads_per_rank=4
+N=10000 ranks=4 cutoff=128 multiplication_seconds=91.989544
+N=10000 ranks=4 threads=4 trial=2
+threads_per_rank=4
+N=10000 ranks=4 cutoff=128 multiplication_seconds=92.416324
+N=10000 ranks=4 threads=4 trial=3
+threads_per_rank=4
+N=10000 ranks=4 cutoff=128 multiplication_seconds=91.648110

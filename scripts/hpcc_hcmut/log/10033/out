@@ -1,0 +1,46 @@
+Results directory: /home/s2452704/ondemand/data/sys/myjobs/projects/default/1/ParallelComputing_Assigment/output-job-10033-WAaOof
+node1
+node7
+[node1.supernodexp.hpc:3235318] Rank 0 bound to package[0][core:L2-5]
+[node1.supernodexp.hpc:3235318] Rank 1 bound to package[0][core:L6-9]
+[node7.supernodexp.hpc:1132891] Rank 2 bound to package[0][core:L0-3]
+[node7.supernodexp.hpc:1132891] Rank 3 bound to package[0][core:L4-7]
+threads_per_rank=4
+N=256 ranks=4 cutoff=32 multiplication_seconds=0.010405
+Correctness check: PASS
+N=4096 ranks=2 threads=2 trial=1
+threads_per_rank=2
+N=4096 ranks=2 cutoff=128 multiplication_seconds=6.843256
+N=4096 ranks=2 threads=2 trial=2
+threads_per_rank=2
+N=4096 ranks=2 cutoff=128 multiplication_seconds=6.885398
+N=4096 ranks=2 threads=2 trial=3
+threads_per_rank=2
+N=4096 ranks=2 cutoff=128 multiplication_seconds=6.850307
+N=4096 ranks=2 threads=4 trial=1
+threads_per_rank=4
+N=4096 ranks=2 cutoff=128 multiplication_seconds=5.073330
+N=4096 ranks=2 threads=4 trial=2
+threads_per_rank=4
+N=4096 ranks=2 cutoff=128 multiplication_seconds=5.065614
+N=4096 ranks=2 threads=4 trial=3
+threads_per_rank=4
+N=4096 ranks=2 cutoff=128 multiplication_seconds=5.148683
+N=4096 ranks=4 threads=2 trial=1
+threads_per_rank=2
+N=4096 ranks=4 cutoff=128 multiplication_seconds=4.246295
+N=4096 ranks=4 threads=2 trial=2
+threads_per_rank=2
+N=4096 ranks=4 cutoff=128 multiplication_seconds=4.111416
+N=4096 ranks=4 threads=2 trial=3
+threads_per_rank=2
+N=4096 ranks=4 cutoff=128 multiplication_seconds=4.185999
+N=4096 ranks=4 threads=4 trial=1
+threads_per_rank=4
+N=4096 ranks=4 cutoff=128 multiplication_seconds=3.136346
+N=4096 ranks=4 threads=4 trial=2
+threads_per_rank=4
+N=4096 ranks=4 cutoff=128 multiplication_seconds=3.280574
+N=4096 ranks=4 threads=4 trial=3
+threads_per_rank=4
+N=4096 ranks=4 cutoff=128 multiplication_seconds=3.107867

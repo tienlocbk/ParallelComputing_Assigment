@@ -1,0 +1,116 @@
+Results directory: /home/s2452704/ondemand/data/sys/myjobs/projects/default/1/ParallelComputing_Assigment/output-job-10028-pkakds
+node1
+node2
+[node1.supernodexp.hpc:3206415] Rank 0 bound to package[0][core:L2-5]
+[node2.supernodexp.hpc:2352328] Rank 1 bound to package[0][core:L0-3]
+threads_per_rank=4
+N=256 ranks=2 cutoff=32 multiplication_seconds=0.009716
+Correctness check: PASS
+N=1024 ranks=1 threads=1 trial=1
+threads_per_rank=1
+N=1024 ranks=1 cutoff=128 multiplication_seconds=0.428107
+N=1024 ranks=1 threads=1 trial=2
+threads_per_rank=1
+N=1024 ranks=1 cutoff=128 multiplication_seconds=0.433561
+N=1024 ranks=1 threads=1 trial=3
+threads_per_rank=1
+N=1024 ranks=1 cutoff=128 multiplication_seconds=0.426643
+N=1024 ranks=1 threads=4 trial=1
+threads_per_rank=4
+N=1024 ranks=1 cutoff=128 multiplication_seconds=0.256513
+N=1024 ranks=1 threads=4 trial=2
+threads_per_rank=4
+N=1024 ranks=1 cutoff=128 multiplication_seconds=0.255093
+N=1024 ranks=1 threads=4 trial=3
+threads_per_rank=4
+N=1024 ranks=1 cutoff=128 multiplication_seconds=0.211583
+N=1024 ranks=2 threads=1 trial=1
+threads_per_rank=1
+N=1024 ranks=2 cutoff=128 multiplication_seconds=0.279138
+N=1024 ranks=2 threads=1 trial=2
+threads_per_rank=1
+N=1024 ranks=2 cutoff=128 multiplication_seconds=0.270792
+N=1024 ranks=2 threads=1 trial=3
+threads_per_rank=1
+N=1024 ranks=2 cutoff=128 multiplication_seconds=0.272634
+N=1024 ranks=2 threads=4 trial=1
+threads_per_rank=4
+N=1024 ranks=2 cutoff=128 multiplication_seconds=0.185279
+N=1024 ranks=2 threads=4 trial=2
+threads_per_rank=4
+N=1024 ranks=2 cutoff=128 multiplication_seconds=0.188684
+N=1024 ranks=2 threads=4 trial=3
+threads_per_rank=4
+N=1024 ranks=2 cutoff=128 multiplication_seconds=0.183471
+N=2048 ranks=1 threads=1 trial=1
+threads_per_rank=1
+N=2048 ranks=1 cutoff=128 multiplication_seconds=2.602077
+N=2048 ranks=1 threads=1 trial=2
+threads_per_rank=1
+N=2048 ranks=1 cutoff=128 multiplication_seconds=2.614723
+N=2048 ranks=1 threads=1 trial=3
+threads_per_rank=1
+N=2048 ranks=1 cutoff=128 multiplication_seconds=2.589811
+N=2048 ranks=1 threads=4 trial=1
+threads_per_rank=4
+N=2048 ranks=1 cutoff=128 multiplication_seconds=1.001028
+N=2048 ranks=1 threads=4 trial=2
+threads_per_rank=4
+N=2048 ranks=1 cutoff=128 multiplication_seconds=1.032913
+N=2048 ranks=1 threads=4 trial=3
+threads_per_rank=4
+N=2048 ranks=1 cutoff=128 multiplication_seconds=1.041188
+N=2048 ranks=2 threads=1 trial=1
+threads_per_rank=1
+N=2048 ranks=2 cutoff=128 multiplication_seconds=1.624790
+N=2048 ranks=2 threads=1 trial=2
+threads_per_rank=1
+N=2048 ranks=2 cutoff=128 multiplication_seconds=1.649279
+N=2048 ranks=2 threads=1 trial=3
+threads_per_rank=1
+N=2048 ranks=2 cutoff=128 multiplication_seconds=1.650037
+N=2048 ranks=2 threads=4 trial=1
+threads_per_rank=4
+N=2048 ranks=2 cutoff=128 multiplication_seconds=1.071634
+N=2048 ranks=2 threads=4 trial=2
+threads_per_rank=4
+N=2048 ranks=2 cutoff=128 multiplication_seconds=1.044201
+N=2048 ranks=2 threads=4 trial=3
+threads_per_rank=4
+N=2048 ranks=2 cutoff=128 multiplication_seconds=1.058359
+N=4096 ranks=1 threads=1 trial=1
+threads_per_rank=1
+N=4096 ranks=1 cutoff=128 multiplication_seconds=18.453097
+N=4096 ranks=1 threads=1 trial=2
+threads_per_rank=1
+N=4096 ranks=1 cutoff=128 multiplication_seconds=18.446723
+N=4096 ranks=1 threads=1 trial=3
+threads_per_rank=1
+N=4096 ranks=1 cutoff=128 multiplication_seconds=18.352501
+N=4096 ranks=1 threads=4 trial=1
+threads_per_rank=4
+N=4096 ranks=1 cutoff=128 multiplication_seconds=5.936649
+N=4096 ranks=1 threads=4 trial=2
+threads_per_rank=4
+N=4096 ranks=1 cutoff=128 multiplication_seconds=5.826535
+N=4096 ranks=1 threads=4 trial=3
+threads_per_rank=4
+N=4096 ranks=1 cutoff=128 multiplication_seconds=5.776909
+N=4096 ranks=2 threads=1 trial=1
+threads_per_rank=1
+N=4096 ranks=2 cutoff=128 multiplication_seconds=11.253902
+N=4096 ranks=2 threads=1 trial=2
+threads_per_rank=1
+N=4096 ranks=2 cutoff=128 multiplication_seconds=11.048800
+N=4096 ranks=2 threads=1 trial=3
+threads_per_rank=1
+N=4096 ranks=2 cutoff=128 multiplication_seconds=11.091141
+N=4096 ranks=2 threads=4 trial=1
+threads_per_rank=4
+N=4096 ranks=2 cutoff=128 multiplication_seconds=5.160733
+N=4096 ranks=2 threads=4 trial=2
+threads_per_rank=4
+N=4096 ranks=2 cutoff=128 multiplication_seconds=5.224655
+N=4096 ranks=2 threads=4 trial=3
+threads_per_rank=4
+N=4096 ranks=2 cutoff=128 multiplication_seconds=5.115958
