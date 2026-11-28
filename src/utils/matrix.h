@@ -149,16 +149,12 @@ static inline int mat_sub_inplace(Matrix *A, const Matrix *B)
     return 0;
 }
 
-static inline Matrix *mat_mul_naive(const Matrix *A, const Matrix *B)
+/* Accumulates A * B into an existing output of the matching dimensions. */
+static inline void mat_mul_naive_into(const Matrix *A, const Matrix *B, Matrix *C)
 {
-    if (A->cols != B->rows) return NULL;
-
     int m = A->rows;
     int k = A->cols;
     int n = B->cols;
-
-    Matrix *C = mat_create(m, n);
-    if (!C) return NULL;
 
     /* ikj loop order — better cache behaviour for row-major storage */
     for (int i = 0; i < m; i++) {
@@ -169,7 +165,13 @@ static inline Matrix *mat_mul_naive(const Matrix *A, const Matrix *B)
             }
         }
     }
+}
 
+static inline Matrix *mat_mul_naive(const Matrix *A, const Matrix *B)
+{
+    if (A->cols != B->rows) return NULL;
+    Matrix *C = mat_create(A->rows, B->cols);
+    if (C) mat_mul_naive_into(A, B, C);
     return C;
 }
 

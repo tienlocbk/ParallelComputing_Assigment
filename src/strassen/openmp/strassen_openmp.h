@@ -10,3 +10,11 @@
 extern "C"
 #endif
 Matrix *strassen_multiply_openmp(const Matrix *A, const Matrix *B, int cutoff);
+
+/* Tasks can call the leaf concurrently with the same context. */
+#ifdef __cplusplus
+extern "C"
+#endif
+Matrix *strassen_multiply_openmp_with_leaf(const Matrix *a, const Matrix *b,
+                                           int cutoff, StrassenLeaf leaf,
+                                           void *context);
