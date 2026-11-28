@@ -1,5 +1,6 @@
-#include "matrix.h"
-#include "timer.h"
+#include "binary_io.h"
+#include "verify.h"
+#include "../utils/timer.h"
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>

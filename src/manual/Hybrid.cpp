@@ -1,5 +1,6 @@
-#include "matrix.h"
-#include "timer.h"
+#include "binary_io.h"
+#include "verify.h"
+#include "../utils/timer.h"
 #include <limits.h>
 #include <mpi.h>
 #include <omp.h>
